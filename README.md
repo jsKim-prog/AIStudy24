@@ -22,3 +22,35 @@ MBC 상점에서 앱마켓을 운영하는데 AI를 활용하는 기법을 학�
 > 특성(feature) : 입력(input)에 사용된 속성(예 : 길이, 무게)
   
 * `import matplotlib.pyplot as plt`
+  - `matplotlib` : 과학계산용 그래프 그리기용 패키지 (관례 : as mlt)
+  - `pyplot` : matplotlib의 하위 API를 포장(wrapping)한 명령어 집합을 제공(관례 : as plt)
+
+* `zip()` : 여러 개의 순회가능한 객체를 받아 각 객체의 원소를 차례로 묶어 튜플로 반환
+  ```python
+  a = [1, 2, 3]
+  b = [‘a’, ‘b’, ‘c’]
+  for pair in zip(a, b):
+     print(pair)
+
+  (1, ‘a’)
+  (2, ‘b’)
+  (3, ‘c’)
+  ```
+
+* `import numpy as np`
+     - Numpy : 파이썬의 대표적인 배열 라이브러리로, 고차원 배열을 손쉽게 조작 -> 샘플링 편향을 막기 위해 사용
+     - 관례 : as np
+     - `.shape` : 배열의 크기를 알려주는 메서드
+       
+       ```python
+        print(input_arr.shape) 
+        (49, 2)   # 2개의 열(길이, 무게), 49행(데이터 49개)
+        ```
+
+### 🧩 AI 트레이닝
+* `from sklearn.neighbors import KNeighborsClassifier`
+   - `sklearn` : 사이킷런 패키지를 활용한 AI 트레이닝
+   - `KNeighborsClassifier` : k-최근접 이웃 알고리즘 사용
+   - > k-최근접 이웃 알고리즘
+     > - 어떤 데이터에 대한 답을 구할 때 주위의 다른 데이터를 보고 다수를 차지하는 것을 정답으로 출력 
+     > - 객체를 메모리에 만들고 활용 -> 데이터가 커지면 메모리가 많이 필요하며, 직선거리 계산시간도 오래 걸림
