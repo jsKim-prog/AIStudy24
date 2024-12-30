@@ -1,5 +1,4 @@
-# AIStudy24
-파이썬을 이용한 머신러닝/딥러닝 학습용
+![header](https://capsule-render.vercel.app/api?type=waving&height=150&color=gradient&text=AI%20Study&desc=파이썬을%20이용한%20머신러닝/딥러닝%20학습용&fontColor=1B1833&descSize=-3&fontAlignY=30)
 
 ## 시나리오
 MBC 상점에서 앱마켓을 운영하는데 AI를 활용하는 기법을 학습해 보자.
