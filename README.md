@@ -14,7 +14,7 @@ MBC 상점에서 앱마켓을 운영하는데 AI를 활용하는 기법을 학�
    2. 🧩 AI 트레이닝
    3. 📋 훈련 평가
 
-### 📈 데이터 전처리 및 훈련데이터 생성
+### 📈 데이터 전처리(Data preprocessing) 및 훈련데이터 생성
 > 훈련 데이터(training data)
 > - 입력(input) : 훈련용 데이터
 > - 타겟(target) : 정답 데이터
@@ -37,15 +37,26 @@ MBC 상점에서 앱마켓을 운영하는데 AI를 활용하는 기법을 학�
   (3, ‘c’)
   ```
 
-* `import numpy as np`
-     - Numpy : 파이썬의 대표적인 배열 라이브러리로, 고차원 배열을 손쉽게 조작 -> 샘플링 편향을 막기 위해 사용
-     - 관례 : as np
+* **numpy** : 2차원 배열 생성(fish_data, fish_target)
+     - numpy : 파이썬의 대표적인 배열 라이브러리로, 고차원 배열을 손쉽게 조작 
+     - 관례 : `import numpy as np`
      - `.shape` : 배열의 크기를 알려주는 메서드
        
        ```python
         print(input_arr.shape) 
         (49, 2)   # 2개의 열(길이, 무게), 49행(데이터 49개)
         ```
+     - `np.column_stack((list1, list2))` : 2차원 배열 생성 >>> `[[list1[0], list2[0]], [list1[1], list2[1]],…]`
+     - `np.ones(number)` : number 개수 만큼의 1로 이루어진 배열 생성 >>> `np.ones(3) [1,1,1]`
+     - `np.zeros(number)` : number 개수 만큼의 0으로 이루어진 배열 생성 >>> `np.zeros(3) [0, 0, 0]`
+     - `np.concatenate((list1, list2))` : 두 배열을 1차원 배열로 합침
+* **train_test_split** : 배열을 랜덤하게 섞어 훈련용과 평가용으로 분리
+  ```python
+  from sklearn.model_selection import train_test_split
+  train_input, test_input, train_target, test_target = train_test_split(fish_data, fish_target, stratify=fish_target, random_state=42)
+  ```
+
+  - stratify : 타겟값을 넣어줌(target의 class 비율을 유지한 채 데이터 셋을 split 함)
 
 ### 🧩 AI 트레이닝
 * `from sklearn.neighbors import KNeighborsClassifier`
