@@ -8,7 +8,7 @@ MBC 상점에서 앱마켓을 운영하는데 AI를 활용하는 기법을 학�
 * AI 미션 : 생선의 길이가 30cm 이상이면 도미!!!
 
 ## 머신러닝 기초
-*  File :  [머신러닝_생선길이_학습](https://github.com/jsKim-prog/AIStudy24/blob/master/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D_%EC%83%9D%EC%84%A0%EA%B8%B8%EC%9D%B4_%ED%95%99%EC%8A%B5.ipynb) / [훈련세트_테스트세트](https://github.com/jsKim-prog/AIStudy24/blob/master/%ED%9B%88%EB%A0%A8%EC%84%B8%ED%8A%B8_%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%84%B8%ED%8A%B8.ipynb)
+*  File :  [머신러닝_생선길이_학습](https://github.com/jsKim-prog/AIStudy24/blob/master/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D_%EC%83%9D%EC%84%A0%EA%B8%B8%EC%9D%B4_%ED%95%99%EC%8A%B5.ipynb) / [훈련세트_테스트세트](https://github.com/jsKim-prog/AIStudy24/blob/master/%ED%9B%88%EB%A0%A8%EC%84%B8%ED%8A%B8_%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%84%B8%ED%8A%B8.ipynb) / [TrainingSet_Study](https://github.com/jsKim-prog/AIStudy24/blob/master/TrainingSet_Study.ipynb)
 *  AI 훈련 기본 단계
    1. 📈 데이터 전처리 및 훈련데이터 생성
    2. 🧩 AI 트레이닝
